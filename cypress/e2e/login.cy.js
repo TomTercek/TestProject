@@ -13,6 +13,7 @@ describe('Test Login Functionality', () => {
   it('user should be able to log in', () => {
     
       cy.wait(3000)
+
       cy.login('admin','admin123')
   
       cy.get('.oxd-topbar-header-breadcrumb > .oxd-text').contains('Dashboard') //assertion
@@ -24,6 +25,7 @@ describe('Test Login Functionality', () => {
       cy.wait(3000)
   
       cy.logout()
+      
     })
   
    //negative
@@ -31,10 +33,13 @@ describe('Test Login Functionality', () => {
     it('user should not be able to log in', () => {
   
       cy.wait(3000)
+
       cy.login('admin','admin')
+      
       cy.contains('Invalid credentials').should('exist')
   
       cy.url().should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+
     })
 
 })
