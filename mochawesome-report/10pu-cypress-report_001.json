@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-26T09:33:32.139Z",
+    "end": "2023-07-26T09:34:53.980Z",
+    "duration": 81841,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e4123c6e-1a16-45e0-8b35-94ba7a54d38a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6eaf65b6-8e71-4ea0-86c8-7ac3374679c0",
+          "title": "Test Login Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user should be able to log in",
+              "fullTitle": "Test Login Functionality user should be able to log in",
+              "timedOut": null,
+              "duration": 74347,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "56c9540e-ef5e-4e3f-bcce-fabe418cf808",
+              "parentUUID": "6eaf65b6-8e71-4ea0-86c8-7ac3374679c0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user should not be able to log in",
+              "fullTitle": "Test Login Functionality user should not be able to log in",
+              "timedOut": null,
+              "duration": 7294,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "1d12e130-32a2-41c9-904f-0b655ed6cff3",
+              "parentUUID": "6eaf65b6-8e71-4ea0-86c8-7ac3374679c0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "56c9540e-ef5e-4e3f-bcce-fabe418cf808",
+            "1d12e130-32a2-41c9-904f-0b655ed6cff3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 81641,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "10pu-cypress-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "code": false,
+        "overwrite": false,
+        "reportFilename": "10pu-cypress-report",
+        "autoOpen": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
