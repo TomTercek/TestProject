@@ -1,24 +1,12 @@
 
- name: CI/CD is easy
+name: setup Cypress
+uses: cypress-io/github-action@v5
 
- on:
-   push:
-     branches:
-       - master
+with:
+  build: yarn install-ci
+  start: yarn start
+  browser: chrome
 
-  jobs:
-    builds:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v1
-            with:
-              node-version:12
-        - run: npm ci # this means install
-        - run: npm test
-        - run: npm run build
-        - run: npm run deploy
-        
 
 
 # - name: GitHub Script
