@@ -11,10 +11,6 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v5
-        with:
-          working-directory: cypress/e2e
-          component: true 
-
 
 # - name: GitHub Script
 #   uses: actions/github-script@v2.1.0
